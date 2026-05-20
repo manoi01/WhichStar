@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cosmic: #0a0a1f;
+  --color-meteor: #e24b4a;
+  --color-nebula: #7f77dd;
+  --color-planet: #1d9e75;
+  --color-sun: #ef9f27;
+
+  --font-sans: var(--font-noto-sans-thai), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-noto-serif-thai), ui-serif, Georgia, serif;
+
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
+  --animate-pulse-star: pulse-star 1.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(0.4);
+  }
+}
+
+@keyframes pulse-star {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #0a0a1f;
+  color: #e8e8f0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
