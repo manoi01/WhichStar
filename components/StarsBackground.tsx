@@ -43,6 +43,7 @@ export default function StarsBackground() {
             height: `${star.size}px`,
             animationDelay: `${star.delay}s`,
             animationDuration: `${star.duration}s`,
+            willChange: 'opacity, transform',
           }}
         />
       ))}

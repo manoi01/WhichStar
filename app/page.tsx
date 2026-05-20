@@ -80,9 +80,17 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen bg-cosmic overflow-hidden">
+    <main
+      className="relative min-h-screen bg-cosmic overflow-hidden"
+      aria-label="WhichStar - แบบทดสอบบุคลิกภาพ"
+    >
+      <span className="sr-only">WhichStar</span>
       <StarsBackground />
-      <div className="relative z-10 min-h-screen flex justify-center">
+      <div
+        className="relative z-10 min-h-screen flex justify-center"
+        aria-live="polite"
+        aria-atomic="true"
+      >
         <div className="w-full max-w-[480px]">
           <AnimatePresence mode="wait">{renderScreen()}</AnimatePresence>
         </div>

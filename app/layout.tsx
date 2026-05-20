@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_Thai, Noto_Serif_Thai } from 'next/font/google';
 import './globals.css';
 
@@ -16,6 +16,12 @@ const notoSerifThai = Noto_Serif_Thai({
   display: 'swap',
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#0a0a1f',
+};
+
 export const metadata: Metadata = {
   title: 'WhichStar - คุณคือดาวดวงไหน?',
   description: 'ค้นพบจุดแข็งที่ซ่อนอยู่ในตัวคุณผ่านการเดินทางในจักรวาล',
@@ -24,6 +30,7 @@ export const metadata: Metadata = {
     description: 'ค้นพบดาวที่ซ่อนอยู่ในตัวคุณ',
     type: 'website',
   },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

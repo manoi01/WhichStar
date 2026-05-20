@@ -31,7 +31,7 @@ export default function QuestionScreen({
 
       <div className="flex-1 flex flex-col">
         <div className="mb-6">
-          <p className="font-sans text-xs text-white/35 uppercase tracking-widest mb-2">
+          <p className="font-sans text-xs text-white/55 uppercase tracking-widest mb-2">
             ภารกิจที่ {questionIndex + 1}
           </p>
           <h2 className="font-serif text-2xl font-bold text-white mb-4">
@@ -47,7 +47,7 @@ export default function QuestionScreen({
             <button
               key={i}
               onClick={() => onAnswer(choice.type)}
-              className="w-full min-h-[56px] px-4 py-4 text-left bg-white/5 border border-white/12 rounded-2xl text-white/85 font-sans text-sm leading-relaxed hover:bg-white/10 hover:border-white/28 active:bg-white/14 transition-all"
+              className="w-full min-h-[56px] px-4 py-4 text-left bg-white/5 border border-white/12 rounded-2xl text-white/85 font-sans text-sm leading-relaxed hover:bg-white/10 hover:border-white/28 active:bg-white/14 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a1f]"
             >
               {choice.text}
             </button>

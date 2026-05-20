@@ -37,7 +37,7 @@ export default function IntroScreen({ onAccept }: Props) {
       <div className="flex justify-center pt-8">
         <button
           onClick={onAccept}
-          className="min-h-[44px] px-8 py-3 bg-white/10 border border-white/25 rounded-full text-white font-sans font-medium text-base hover:bg-white/18 active:bg-white/25 transition-colors backdrop-blur-sm"
+          className="min-h-[44px] px-8 py-3 bg-white/10 border border-white/25 rounded-full text-white font-sans font-medium text-base hover:bg-white/18 active:bg-white/25 transition-colors backdrop-blur-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a1f]"
         >
           ยอมรับภารกิจ ✨
         </button>

@@ -91,13 +91,13 @@ export default function ResultScreen({ scores, resultType, onReplay }: Props) {
             backgroundColor: `${result.color}12`,
           }}
         >
-          <p className="font-sans text-xs text-white/40 uppercase tracking-wider mb-1">
+          <p className="font-sans text-xs text-white/55 uppercase tracking-wider mb-1">
             จุดแข็ง
           </p>
           <p className="font-sans text-sm text-white/90">{result.strengths}</p>
         </div>
         <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-          <p className="font-sans text-xs text-white/40 uppercase tracking-wider mb-1">
+          <p className="font-sans text-xs text-white/55 uppercase tracking-wider mb-1">
             ระวัง
           </p>
           <p className="font-sans text-sm text-white/75">{result.warnings}</p>
@@ -106,7 +106,7 @@ export default function ResultScreen({ scores, resultType, onReplay }: Props) {
 
       {/* Score Breakdown */}
       <div className="mb-8">
-        <p className="font-sans text-xs text-white/40 uppercase tracking-wider mb-3">
+        <p className="font-sans text-xs text-white/55 uppercase tracking-wider mb-3">
           สัดส่วนพลังดาว
         </p>
         <div className="space-y-2.5">
@@ -140,14 +140,14 @@ export default function ResultScreen({ scores, resultType, onReplay }: Props) {
       <div className="flex gap-3">
         <button
           onClick={handleShare}
-          className="flex-1 min-h-[44px] py-3 bg-white/10 border border-white/20 rounded-full text-white font-sans text-sm font-medium hover:bg-white/16 active:bg-white/22 transition-colors"
+          className="flex-1 min-h-[44px] py-3 bg-white/10 border border-white/20 rounded-full text-white font-sans text-sm font-medium hover:bg-white/16 active:bg-white/22 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a1f]"
           aria-label="แชร์ผลลัพธ์"
         >
           {shared ? '✅ คัดลอกแล้ว' : '✨ แชร์ผลลัพธ์'}
         </button>
         <button
           onClick={onReplay}
-          className="flex-1 min-h-[44px] py-3 bg-white/5 border border-white/12 rounded-full text-white/65 font-sans text-sm hover:bg-white/10 active:bg-white/14 transition-colors"
+          className="flex-1 min-h-[44px] py-3 bg-white/5 border border-white/12 rounded-full text-white/65 font-sans text-sm hover:bg-white/10 active:bg-white/14 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a1f]"
           aria-label="เล่นอีกครั้ง"
         >
           🔄 เล่นอีกครั้ง
